@@ -23,8 +23,8 @@ const Home = () => {
               <div className='flex space-x-2'>
                 {[
                   { icon: flightIcon, label: "Flights" },
-                  { icon: hotelIcon, label: "Hotels" },
-                  { icon: trainIcon, label: "Trains" },
+                  // { icon: hotelIcon, label: "Hotels" },
+                  // { icon: trainIcon, label: "Trains" },
                   { icon: busIcon, label: "Buses" },
                 ].map(({ icon, label }) => (
                   <div

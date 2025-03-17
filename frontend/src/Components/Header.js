@@ -1,8 +1,11 @@
 import React from "react";
 import { AiOutlineUser } from "react-icons/ai";
 import { FaTags, FaHeadset } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
+
   return (
     <header className='bg-white border-b shadow px-4 py-3 flex justify-between items-center'>
       {/* Logo */}
@@ -33,7 +36,10 @@ const Header = () => {
         </a>
 
         {/* Login/Signup */}
-        <div className='flex items-center space-x-2 cursor-pointer'>
+        <div 
+          className='flex items-center space-x-2 cursor-pointer'
+          onClick={() => navigate('/login')}
+        >
           <div className='bg-blue-100 p-1 rounded-full'>
             <AiOutlineUser className='w-5 h-5 text-blue-600' />
           </div>
